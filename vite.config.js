@@ -7,6 +7,9 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
+  optimizeDeps: {
+    exclude: ['js-big-decimal'],
+  },
   resolve: {
     alias: {
       '@': '/src',
