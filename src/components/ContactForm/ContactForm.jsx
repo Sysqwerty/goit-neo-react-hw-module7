@@ -14,11 +14,13 @@ const ContactFormSchema = Yup.object().shape({
   name: Yup.string()
     .min(3, 'To Short!')
     .max(50, 'Too Long!')
-    .required('Required'),
+    .required('Required')
+    .trim(),
   number: Yup.string()
     .min(3, 'To Short!')
     .max(50, 'Too Long!')
-    .required('Required'),
+    .required('Required')
+    .trim(),
 });
 
 const ContactForm = () => {
